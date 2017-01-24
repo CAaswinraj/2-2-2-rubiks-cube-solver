@@ -1,7 +1,5 @@
 # 2*2*2 rubiks cube representation
-'''
-2D REPRESENTAION OF ALL FACES TOGETHER
-'''
+
 
 
 rgw = flu = 0 # (0-th cube; front face)
@@ -46,6 +44,8 @@ bege=[0,0]
 ende=[0,0]
 
 '''
+for
+beg end
 first is position next is level
 '''
 
@@ -284,14 +284,6 @@ class rubik_cube_representation():
 		self._1_Left_face_rotated_anticlockwise_end(new)
 		self._1_Upper_face_rotated_clockwise_end(new)
 		self._1_Upper_face_rotated_anticlockwise_end(new)
-
-
-	'''
-	1 RIGHT TURN = 1 QUARTER CLOCKWISE TURN FROM FRONT
-	1 TOP TURN = 1 QUARTER TURN CLOCKWISE FROM LEFT
-	WE HAVE RIGHT 1,2,3 TURNS AND TOP 1,2,3 TURNS
-	
-	'''
 
 def initialise():
 	global colourlist
