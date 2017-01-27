@@ -332,9 +332,11 @@ def solve(start,endm):
 			print(end)
 			while(c<end[0]):
 				c=c+1
-				for y in range(bege[0],ende[0]+1,1):
+				y=bege[0]		
+				while(y<=ende[0]):
 					if instance_start.lst_of_already_reached_configurations[c] == endm.lst_of_already_reached_configurations_end[y]:
-						return x,y
+						return c,y
+					y=y+1	
 		c=bege[0]-1
 		b=bege[0]
 		e=ende[0]
@@ -346,9 +348,11 @@ def solve(start,endm):
 			print(ende)
 			while(c<ende[0]):
 				c=c+1
-				for y in range(beg[0],end[0]+1,1):
+				y=beg[0]
+				while(y<=end[0]):
 					if instance_start.lst_of_already_reached_configurations[y] == endm.lst_of_already_reached_configurations_end[c]:	
-						return y,x	
+						return y,c
+					y=y+1		
 
 
 
